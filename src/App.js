@@ -2,7 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
   const {DEVELOPER} = process.env;
+  const { REACT_APP_API_URL } = process.env;
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +22,8 @@ function App() {
         >
           Learn React
         </a>
-        <p>{DEVELOPER}</p>
+        <p>Dev: {DEVELOPER}</p>
+        <p>Environment: {REACT_APP_API_URL}</p>
       </header>
     </div>
   );
