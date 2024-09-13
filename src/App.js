@@ -3,8 +3,7 @@ import './App.css';
 
 function App() {
   
-  const {DEVELOPER} = process.env;
-  const { REACT_APP_API_URL } = process.env;
+  const {DEVELOPER, REACT_APP_API_URL} = process.env;
   
   return (
     <div className="App">
